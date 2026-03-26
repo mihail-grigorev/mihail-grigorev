@@ -47,6 +47,6 @@
 
 ## 🌍 Open to Opportunities
 
-- Backend Developer (Junior / Middle)  
+- Backend Developer (Junior)  
 
 ---
