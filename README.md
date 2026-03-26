@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Mikhail Grigoriev
+# 👋 Hi, I'm Mihail Grigoriev
 
 💻 Backend Developer (Python / Node.js)  
 📍 Based in Europe  
