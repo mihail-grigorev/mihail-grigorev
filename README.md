@@ -1,7 +1,6 @@
 # 👋 Hi, I'm Mihail Grigoriev
 
-💻 Backend Developer (Python / Node.js)  
-📍 Based in Europe  
+💻 Backend Developer 
 🚀 I build scalable APIs, backend systems, and MVPs  
 
 ---
