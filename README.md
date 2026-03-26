@@ -1,16 +1,47 @@
-## Hi there 👋
+# 👋 Hi, I'm Mikhail Grigoriev
 
-<!--
-**mihail-grigorev/mihail-grigorev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+💻 Backend Developer (Python / Node.js)  
+📍 Based in Europe  
+🚀 I build scalable APIs, backend systems, and MVPs  
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🛠 Tech Stack
+
+**Languages:**  
+Python, TypeScript  
+
+**Backend:**  
+FastAPI, Django, Flask, Node.js (Express)  
+
+**Databases:**  
+PostgreSQL, MongoDB, Redis  
+
+**Architecture & Tools:**  
+REST API, WebSockets, Microservices, Docker, Nginx  
+
+**Async & Background Jobs:**  
+Celery, Redis  
+
+**Other:**  
+Linux, Git, API Design, Clean Architecture  
+
+---
+
+
+## 📈 Key Skills
+
+- Designing scalable backend architecture  
+- Building production-ready REST APIs  
+- Database design & optimization  
+- Dockerized environments  
+- Writing clean, maintainable code  
+
+---
+
+## 🌍 Open to Opportunities
+
+- Backend Developer (Junior / Middle)  
+
+---
+
