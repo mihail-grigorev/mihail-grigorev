@@ -8,26 +8,34 @@
 
 ## 🛠 Tech Stack
 
-**Languages:**  
-Python, TypeScript  
-
-**Backend:**  
-FastAPI, Django, Flask, Node.js (Express)  
-
-**Databases:**  
-PostgreSQL, MongoDB, Redis  
-
-**Architecture & Tools:**  
-REST API, WebSockets, Microservices, Docker, Nginx  
-
-**Async & Background Jobs:**  
-Celery, Redis  
-
-**Other:**  
-Linux, Git, API Design, Clean Architecture  
+### 💻 Languages
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
 ---
 
+### 🚀 Backend Frameworks
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge)
+
+---
+
+### 🧩 Libraries & Tools
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge)
+![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge)
+![Aiogram](https://img.shields.io/badge/Aiogram-2CA5E0?style=for-the-badge)
+![Celery](https://img.shields.io/badge/Celery-37814A?style=for-the-badge)
+
+---
+
+### 🗄 Databases
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+---
 
 ## 📈 Key Skills
 
@@ -44,4 +52,3 @@ Linux, Git, API Design, Clean Architecture
 - Backend Developer (Junior / Middle)  
 
 ---
-
