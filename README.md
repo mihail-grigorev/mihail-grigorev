@@ -1,36 +1,82 @@
-## 🚀 Featured Projects
+# Hi, I'm Mihail 👋
+### Backend Engineer → Data Engineer
 
-### [👟 Sneaker Data Lakehouse | End-to-End Analytics Platform](https://github.com/mihail-grigorev/sneaker-data-lakehouse)
-> **Data Engineering • Medallion Architecture • Batch Processing**
+> 🟢 **Open to Data Engineer / Analytics Engineer roles** · [CITY / Remote] · English: [LEVEL] · [email@example.com] · [Telegram @username]
 
-Масштабируемый Data Lakehouse для e-commerce ритейла кроссовок с полным циклом обработки данных: от сырых событий до витрин метрик в хранилище.
-
-* **Архитектура (Medallion Architecture):**
-  * **Bronze:** Ingestion потока транзакций (JSON) в распределенное S3-совместимое объектное хранилище.
-  * **Silver:** Дедупликация, валидация строгих контрактов данных, очистка аномалий и партиционирование в колоночный формат **Parquet** через **Apache Spark**.
-  * **Gold & Datamart:** Агрегация бизнес-метрик (GMV, net revenue, retention/return rate, средний чек по брендам и каналам сбыта) с репликацией в аналитический витринный слой **PostgreSQL**.
-* **Оркестрация & Data Quality:** Пайплайн автоматизирован в **Apache Airflow** с внедрением Quality Gates — автоматической валидацией целостности и наличия партиций перед пересчетом витрин.
-* **Стек:** `Python`, `Apache Airflow`, `Apache Spark (PySpark)`, `PostgreSQL`, `S3 API (Garage Rust S3)`, `Docker & Compose`.
+Backend developer with production experience in asynchronous microservices, REST APIs and database-heavy systems, now building end-to-end analytical pipelines: **Airflow → Spark → S3 data lake → PostgreSQL DWH**, all containerized and idempotent.
 
 ---
 
-### [💳 Enterprise Financial Transactions & Fraud Platform](https://github.com/mihail-grigorev)
-> **Data Infrastructure • Real-time Streaming • Analytical Warehousing**
+## 🛠️ Tech Stack
 
-Симуляция отказоустойчивой банковской платформы для потоковой обработки транзакций, начисления кэшбэка и агрегации аналитики.
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Airflow](https://img.shields.io/badge/Airflow-017CEE?logo=apacheairflow&logoColor=white)
+![Spark](https://img.shields.io/badge/PySpark-E25A1C?logo=apachespark&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
 
-* **Потоковая и пакетная обработка:** Прием транзакционных сообщений через распределенную шину **Apache Kafka** с последующей batch-обработкой и валидацией в **PySpark**.
-* **DWH & Витрины:** Моделирование многослойного корпоративного хранилища данных с разделением на аналитические движки (**ClickHouse** для OLAP real-time аналитики и **Greenplum** для сложных распределенных срезов).
-* **Трансформация:** Версионирование, тестирование и документирование пайплайнов трансформации данных с помощью **dbt**.
-* **Стек:** `Apache Kafka`, `PySpark`, `ClickHouse`, `Greenplum`, `dbt`, `PostgreSQL`, `Docker`.
+**Working knowledge:** Parquet, S3 API (boto3 / S3A), medallion architecture (Bronze/Silver/Gold), window functions, `EXPLAIN ANALYZE`, pytest
+**Learning next:** dbt, ClickHouse, Kafka
 
 ---
 
-### [🔍 Entity Resolution & Customer Identity Matching](https://github.com/mihail-grigorev)
-> **Data Quality • NLP Matching • Business Process Automation**
+## ⭐ Featured Project — Sneaker Data Lakehouse (Data Engineering)
 
-ETL-конвейер дедупликации и слияния разнородных клиентских профилей из разрозненных источников с высоким уровнем шума.
+**[sneaker-data-lakehouse](https://github.com/mihail-grigorev/sneaker-data-lakehouse)** · `Airflow` `PySpark` `S3 (object storage)` `PostgreSQL` `Docker Compose`
 
-* **Алгоритмы слияния:** Реализация гибридного матчинга строк на базе расстояния Дамерау-Левенштейна и Джаро-Винклера с предварительной нормализацией через Unicode NFKC и фонетические эвристики.
-* **Интеграция процессов:** Моделирование логики маршрутизации, ручной валидации пограничных совпадений и обогащения данных через диаграммы **Camunda BPMN**.
-* **Стек:** `Python`, `MySQL`, `String Metrics`, `Camunda BPMN`, `ETL Pipelines`.
+End-to-end batch ETL for a sneaker store: raw order events → cleaned analytics → a datamart ready for BI.
+
+![Pipeline architecture](docs/diagram_1.png)
+
+- **Medallion lakehouse:** raw JSON (Bronze) → validated Parquet partitioned by date (Silver) → aggregated metrics (Gold).
+- **Orchestration:** Airflow DAG with retries, failure callback and a **data-quality gate** between Silver and Gold.
+- **Idempotent by design:** re-running a date overwrites its Silver partition and replaces its datamart rows, with no duplicates (composite primary key in PostgreSQL).
+- **Metrics:** revenue, refunds, return rate and average ticket per brand / channel / day.
+- **One command to run:** `docker compose up -d --build`, with the whole stack reproducible locally.
+
+**Result:** [ADD ONE LINE WITH NUMBERS, e.g. "300 events/day × N days → X metric rows; full run in ~Y min"]
+
+---
+
+## 💻 Other Projects
+
+| Project | What it shows | Stack | Status |
+|---|---|---|---|
+| 🔹 **[Async High-Throughput Web Services](LINK)** | Production microservices, schema design, indexes, `EXPLAIN ANALYZE` tuning, multi-stage Docker | FastAPI · AsyncIO · Pydantic · PostgreSQL | ✅ Production |
+| 🔹 **[Entity Resolution & Data Cleaning](LINK)** | Fuzzy matching and deduplication across relational DBs (Damerau-Levenshtein, Jaro-Winkler) | Python · SQL | ✅ Production |
+| 🔹 **[Telegram Processing Platform](LINK)** | Event-driven bots, payment webhooks, async workers, Redis caching | aiogram · AsyncIO · Redis | ✅ Production |
+
+> Replace every `LINK` with the real repository URL. At the moment all three links point to the same README anchor.
+
+For each project add 1 line of impact if you can state it truthfully, e.g. "deduplicated N records, reduced duplicates by X%".
+
+---
+
+## 🎯 Data Engineering Roadmap
+
+- [x] SQL & relational theory: window functions, indexes, query tuning
+- [x] Orchestration: Apache Airflow DAGs
+- [x] Distributed processing: PySpark batch jobs
+- [x] Data lake & medallion architecture on S3-compatible storage
+- [ ] DWH modeling: Kimball star schema, staging layer, Data Vault basics
+- [ ] Transformations: dbt
+- [ ] Analytical engines: ClickHouse / Greenplum
+- [ ] Streaming: Apache Kafka
+
+---
+
+## 💡 What My Backend Background Brings to Data
+
+- **Engineered code, not scripts:** modular, typed Python with tests.
+- **Deep database awareness:** transactions, locking, connection pooling, schema design.
+- **Reliability mindset:** idempotent retries, failure alerts, reproducible Docker environments.
+
+---
+
+## 📬 Contact
+
+[email@example.com](mailto:mihailgrigorev223@yandex.ru) · [Telegram](https://t.me/grigoriev-mihail) ·
