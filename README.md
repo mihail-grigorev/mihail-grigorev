@@ -71,21 +71,21 @@ I apply clean-code architecture, ACID guarantees, query optimization and contain
 
 Batch ETL pipeline: raw JSON → Parquet (Bronze/Silver/Gold) → sales metrics in a PostgreSQL datamart. Orchestrated by Airflow, idempotent, runs with one `docker compose up`.
 
-### 🔹 Entity Resolution & Data Cleaning Pipelines · ✅ Production
+### 🔹 Entity Resolution & Data Cleaning Pipelines 
 `Python` `SQL` `Algorithms`
 
 * Built high-performance batch pipelines for fuzzy identity resolution and record deduplication.
 * Applied phonetic and edit-distance algorithms (Damerau-Levenshtein, Jaro-Winkler) to consolidate customer and transactional records across relational databases.
 * Automated validation rules to keep data consistent between operational stores.
 
-### 🔹 Asynchronous High-Throughput Web Services · ✅ Production
+### 🔹 Asynchronous High-Throughput Web Services 
 `Python` `FastAPI` `PostgreSQL` `Docker`
 
 * Designed and deployed production microservices (FastAPI, AsyncIO, Pydantic).
 * Designed schemas, indexes and transactional boundaries; query optimization with `EXPLAIN ANALYZE`.
 * Multi-stage Docker builds and reproducible dev environments.
 
-### 🔹 Automated Bot & Processing Platforms · ✅ Production
+### 🔹 Automated Bot & Processing Platforms 
 `Python` `AsyncIO` `Redis` `aiogram`
 
 * Event-driven Telegram platforms with state management and webhook integrations.
