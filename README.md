@@ -51,5 +51,5 @@ I build resilient, distributed data pipelines and analytical storage systems. Ha
 
 ### 📬 Connect with Me
 - **LinkedIn:** [linkedin.com/in/...](#)
-- **Telegram:** [@...](#)
-- **Email:** `...`
+- **Telegram:** [@grigoriev_mihail](#)
+- **Email:** `mihailgrigorev223@yandex.ru`
