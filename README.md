@@ -31,6 +31,7 @@ I apply clean-code architecture, ACID guarantees, query optimization and contain
 ![Apache Airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white)
 ![Apache Spark](https://img.shields.io/badge/PySpark-E25A1C?style=flat-square&logo=apachespark&logoColor=white)
 ![Amazon S3](https://img.shields.io/badge/S3%20API-569A31?style=flat-square&logo=amazons3&logoColor=white)
+![MinIO](https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white)
 ![Parquet](https://img.shields.io/badge/Parquet-50ABF1?style=flat-square&logo=apache&logoColor=white)
 
 ### 🗄️ Databases & Warehouses
@@ -66,12 +67,9 @@ I apply clean-code architecture, ACID guarantees, query optimization and contain
 ## 💻 Projects & Experience
 
 ### ⭐ FEATURED · [Sneaker Data Lakehouse](https://github.com/mihail-grigorev/sneaker-data-lakehouse)
-`Airflow` `PySpark` `S3` `Parquet` `PostgreSQL` `Docker Compose`
+`Airflow` `PySpark` `S3` `Parquet` `PostgreSQL` `Docker`
 
-* End-to-end batch ETL with medallion architecture: raw JSON (**Bronze**) → validated Parquet partitioned by date (**Silver**) → aggregated metrics (**Gold**).
-* Airflow DAG with retries, failure callbacks and a **data-quality gate** between layers.
-* PySpark on S3-compatible object storage; daily brand/channel metrics (revenue, refunds, return rate, average ticket) loaded into a PostgreSQL datamart.
-* **Idempotent by design:** partition overwrite, delete-and-insert by date, composite primary key; the whole stack runs with `docker compose up`.
+Batch ETL pipeline: raw JSON → Parquet (Bronze/Silver/Gold) → sales metrics in a PostgreSQL datamart. Orchestrated by Airflow, idempotent, runs with one `docker compose up`.
 
 ### 🔹 Entity Resolution & Data Cleaning Pipelines · ✅ Production
 `Python` `SQL` `Algorithms`
@@ -95,31 +93,25 @@ I apply clean-code architecture, ACID guarantees, query optimization and contain
 
 ---
 
-## 🗺️ Roadmap: Data Engineering
+## 🎓 Data Engineering Skills
 
-> After each block I build a mini-project or task to lock the knowledge in.
-
-| # | Block | Focus | Status |
-|:-:|---|---|:-:|
-| 1 | **SQL** | Window functions, joins, CTEs · mini-project: SQL cheat sheet | ✅ |
-| 2 | **Database theory** | ACID, indexes (B-tree, GIN/GiST), locking · mini-project | ✅ |
-| 3 | **Warehouse theory** | Kimball, Star/Snowflake, staging, Data Vault | ✅ |
-| 4 | **Greenplum** | MPP, distribution keys, distributed queries | ✅ |
-| 5 | **ClickHouse** | Columnar storage, MergeTree, sharding | ✅ |
-| 6 | **Python** | Typed, modular, tested code for pipelines | ✅ |
-| 7 | **Airflow** | DAGs, retries, quality gates, idempotency | 🔥 In progress |
-| 8 | **dbt** | Models, tests, documentation | ⏳ Next |
-| 9 | **Spark + Jupyter** | PySpark batch jobs, Parquet | 🔨 Practicing in pet-project |
-| 10 | **S3** | Object storage, S3 API, data lake layout | 🔨 Practicing in pet-project |
-| 11 | **MinIO** | S3-compatible storage for local lakehouse | 🔨 Practicing in pet-project |
-| 12 | **Kafka** | Event streaming, topics, consumers | ⏳ Planned |
-| 13 | **GitHub** | Profile, repos, documentation | 🔨 Ongoing |
-| 14 | **Hadoop** | HDFS, YARN fundamentals | ⏸ In parallel with pet-project |
-| 15 | **Linux** | Shell, processes, networking | ⏸ In parallel with pet-project |
-
-**Legend:** ✅ done · 🔥 current focus · 🔨 hands-on in a project · ⏳ upcoming · ⏸ learned alongside projects
-
-**Next steps:** reach full Airflow proficiency this month; keep Hadoop and Linux for the pet-project instead of studying them in isolation.
+| # | Skill | What I work with |
+|:-:|---|---|
+| 1 | **SQL** | Window functions, CTEs, joins, query tuning |
+| 2 | **Database theory** | ACID, transactions, locking, indexes (B-tree, GIN/GiST) |
+| 3 | **Data warehouse theory** | Kimball modeling, Star/Snowflake, staging layers, Data Vault |
+| 4 | **Greenplum** | MPP architecture, distribution keys, distributed queries |
+| 5 | **ClickHouse** | Columnar storage, MergeTree engines, sharding |
+| 6 | **Python** | Typed, modular, tested code for data pipelines |
+| 7 | **Airflow** | DAGs, retries, data-quality gates, idempotent tasks |
+| 8 | **dbt** | Models, tests, documentation, transformation workflows |
+| 9 | **Spark + Jupyter** | PySpark batch processing, Parquet, notebooks |
+| 10 | **S3** | Object storage, S3 API (boto3 / S3A), data lake layout |
+| 11 | **MinIO** | S3-compatible storage for local lakehouse setups |
+| 12 | **Kafka** | Event streaming, topics, producers and consumers |
+| 13 | **GitHub** | Version control, repositories, documentation |
+| 14 | **Hadoop** | HDFS and YARN fundamentals |
+| 15 | **Linux** | Shell, processes, networking |
 
 ---
 
