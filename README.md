@@ -1,7 +1,6 @@
 # Hi, I'm Mihail 👋
 ### Backend Engineer → Data Engineer
 
-> 🟢 **Open to Data Engineer / Analytics Engineer roles** · [CITY / Remote] · English: [LEVEL] · [email@example.com] · [Telegram @username]
 
 Backend developer with production experience in asynchronous microservices, REST APIs and database-heavy systems, now building end-to-end analytical pipelines: **Airflow → Spark → S3 data lake → PostgreSQL DWH**, all containerized and idempotent.
 
