@@ -91,29 +91,6 @@ Batch ETL pipeline: raw JSON → Parquet (Bronze/Silver/Gold) → sales metrics 
 * Event-driven Telegram platforms with state management and webhook integrations.
 * Payment gateways and media-processing workflows with asynchronous workers and Redis caching.
 
----
-
-## 🎓 Data Engineering Skills
-
-| # | Skill | What I work with |
-|:-:|---|---|
-| 1 | **SQL** | Window functions, CTEs, joins, query tuning |
-| 2 | **Database theory** | ACID, transactions, locking, indexes (B-tree, GIN/GiST) |
-| 3 | **Data warehouse theory** | Kimball modeling, Star/Snowflake, staging layers, Data Vault |
-| 4 | **Greenplum** | MPP architecture, distribution keys, distributed queries |
-| 5 | **ClickHouse** | Columnar storage, MergeTree engines, sharding |
-| 6 | **Python** | Typed, modular, tested code for data pipelines |
-| 7 | **Airflow** | DAGs, retries, data-quality gates, idempotent tasks |
-| 8 | **dbt** | Models, tests, documentation, transformation workflows |
-| 9 | **Spark + Jupyter** | PySpark batch processing, Parquet, notebooks |
-| 10 | **S3** | Object storage, S3 API (boto3 / S3A), data lake layout |
-| 11 | **MinIO** | S3-compatible storage for local lakehouse setups |
-| 12 | **Kafka** | Event streaming, topics, producers and consumers |
-| 13 | **GitHub** | Version control, repositories, documentation |
-| 14 | **Hadoop** | HDFS and YARN fundamentals |
-| 15 | **Linux** | Shell, processes, networking |
-
----
 
 ## 💡 What My Backend Background Brings to Data
 
