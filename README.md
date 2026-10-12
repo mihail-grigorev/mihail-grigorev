@@ -1,4 +1,4 @@
-# Hi there, I'm Mikhail 👋
+# Hi there, I'm Mihail 👋
 
 ### **Backend Engineer ➔ Transitioning to Data Engineering**
 
