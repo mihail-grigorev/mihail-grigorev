@@ -1,51 +1,55 @@
-# 👋 Hi, I'm Mihail Grigoriev
+# Hi there, I'm Mikhail 👋
 
-💻 Backend Developer 
-🚀 I build scalable APIs, backend systems, and MVPs  
+### **Data Engineer** *(with a solid Backend Engineering background)*
 
----
-
-## 🛠 Tech Stack
-
-### 💻 Languages
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+I build resilient, distributed data pipelines and analytical storage systems. Having transitioned from backend development, I treat data pipelines as production-grade software: emphasizing clean architecture, rigorous data modeling, ACID guarantees, idempotency, and automated testing.
 
 ---
 
-### 🚀 Backend Frameworks
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+### 💼 Technical Expertise
+
+- **Data Processing & Orchestration:** Apache Airflow, Apache Spark (PySpark), dbt, Streaming ETL / ELT
+- **Databases & DWH:** PostgreSQL, ClickHouse, Greenplum, MySQL, Redis
+- **Streaming & Messaging:** Apache Kafka
+- **Backend & Core:** Python (FastAPI, Asyncio), REST APIs, Docker, Docker Compose, Linux
+- **Storage & Cloud:** S3 / MinIO, Object Storage patterns
+- **Data Engineering Practices:** Kimball Dimensional Modeling, Star/Snowflake schemas, CDC (Change Data Capture), Data Deduplication, Data Quality Checks
 
 ---
 
-### 🧩 Libraries & Tools
-![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge)
-![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge)
-![Aiogram](https://img.shields.io/badge/Aiogram-2CA5E0?style=for-the-badge)
-![Celery](https://img.shields.io/badge/Celery-37814A?style=for-the-badge)
+### 🚀 Featured Projects
+
+#### 🔹 [Fraud Analytics & Financial Transactions Platform](#) *(DWH / Streaming & Batch)*
+*Enterprise-grade platform for payment acquiring analytics, cashback distribution, and fraud detection patterns.*
+- **Tech Stack:** Apache Kafka, PySpark, Greenplum, ClickHouse, dbt, Apache Airflow, PostgreSQL, Docker
+- **Architecture:** 
+  - Real-time ingestion via Kafka topic partitions.
+  - Streaming aggregation and anomaly detection with PySpark.
+  - Multi-layer DWH (Raw / ODS / DDS / Data Marts) in Greenplum & ClickHouse modeled with dbt.
+  - End-to-end Airflow DAGs with idempotent staging loads and SLA alerts.
+
+#### 🔹 [Deduplication & Entity Resolution ETL Pipeline](#) *(Data Cleaning & Deduplication)*
+*High-throughput pipeline for matching, fuzzy deduplication, and consolidation of unstructured customer data.*
+- **Tech Stack:** Python, PostgreSQL, MySQL, S3/MinIO
+- **Highlights:** 
+  - Implemented phonetic and edit-distance algorithms (Damerau-Levenshtein, Jaro-Winkler) for identity resolution.
+  - Batch normalization pipelines handling messy naming and transaction records.
+
+#### 🔹 [Production Backend Services & Event-Driven APIs](#) *(Backend Foundation)*
+*Microservices and asynchronous pipelines handling high request volumes.*
+- **Tech Stack:** Python, FastAPI, PostgreSQL, Redis, Docker
+- **Highlights:** Clean architecture, connection pooling, optimized indexing, MVCC tuning, and robust integration testing.
 
 ---
 
-### 🗄 Databases
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+### 📈 What My Backend Background Brings to Data Teams:
+1. **Production Code Quality:** I don't write "throwaway notebook scripts" — my ETL code uses strict type hints, modular structure, CI/CD, and unit tests.
+2. **Deep Database Internals:** Clear understanding of transaction isolation levels, indexing mechanics (B-tree, GIN/GiST), WAL, and query execution plans (`EXPLAIN ANALYZE`).
+3. **Resilience & Idempotency:** Systems designed for failure handling, retry backoff, backpressure management, and exactly-once / at-least-once semantic realities.
 
 ---
 
-## 📈 Key Skills
-
-- Designing scalable backend architecture  
-- Building production-ready REST APIs  
-- Database design & optimization  
-- Dockerized environments  
-- Writing clean, maintainable code  
-
----
-
-## 🌍 Open to Opportunities
-
-- Backend Developer (Junior)  
-
----
+### 📬 Connect with Me
+- **LinkedIn:** [linkedin.com/in/...](#)
+- **Telegram:** [@...](#)
+- **Email:** `...`
